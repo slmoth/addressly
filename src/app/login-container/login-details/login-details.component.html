@@ -1,0 +1,32 @@
+<div class="login_details">
+    <p>Login</p>
+    <mat-divider></mat-divider>
+    <div class="credentials">
+        <label for="email">Email</label>
+        <mat-form-field>
+            <mat-label>Enter your email</mat-label>
+            <input 
+                matInput
+                placeholder="example@example.com"
+                
+                required
+                />
+        </mat-form-field>
+
+        <label for="password">Password</label>
+        <mat-form-field>
+            <mat-label>*****</mat-label>
+            <input 
+                matInput
+                
+                required
+                />
+        </mat-form-field>
+
+        <div class="login_button">
+            <button mat-flat-button (click)="login()">Login</button>
+        </div>
+
+
+    </div>
+</div>
