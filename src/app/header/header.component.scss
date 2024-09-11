@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Vertically align elements in the center */
+    background-color: rgba(218, 67, 67, 0.953);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+  }
+
+.material-symbols-outlined {
+    align-content: end;
+    text-align: right;
+}
