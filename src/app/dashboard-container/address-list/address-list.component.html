@@ -1,0 +1,39 @@
+<div class="address_list"> 
+    <table mat-table [dataSource]="friends" class="mat-elevation-z8" matSort>
+    <!-- First Name Column -->
+    <ng-container matColumnDef="fullName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name"> Name </th>
+        <td mat-cell *matCellDef="let friend"> {{friend.getFullName()}} </td>
+    </ng-container>
+
+    <!-- Address Column -->
+    <ng-container matColumnDef="address">
+        <th mat-header-cell *matHeaderCellDef> Address </th>
+        <td mat-cell *matCellDef="let friend"> {{friend.addressLine1}} </td>
+    </ng-container>
+    <!-- Address Column -->
+    <ng-container matColumnDef="city">
+        <th mat-header-cell *matHeaderCellDef> City </th>
+        <td mat-cell *matCellDef="let friend"> {{friend.city}} </td>
+    </ng-container>
+    <!-- Address Column -->
+    <ng-container matColumnDef="state">
+        <th mat-header-cell *matHeaderCellDef> State </th>
+        <td mat-cell *matCellDef="let friend"> {{friend.state}} </td>
+    </ng-container>
+    <!-- Address Column -->
+    <ng-container matColumnDef="zip">
+        <th mat-header-cell *matHeaderCellDef> Zip </th>
+        <td mat-cell *matCellDef="let friend"> {{friend.zip}} </td>
+    </ng-container>
+    
+    <!-- Header and Row Declarations -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons
+                   aria-label="Select page of friends">
+    </mat-paginator>
+</div>  

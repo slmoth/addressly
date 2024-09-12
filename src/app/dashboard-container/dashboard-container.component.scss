@@ -1,0 +1,30 @@
+.dashboard_container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 100%;
+    width: 95%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Flexbox container for title and button */
+  .header {
+    display: flex;
+    justify-content: space-between; /* Align title to the left and button to the right */
+    align-items: center; /* Vertically align the button with the title */
+  }
+  
+  .add_friend_button {
+    width: auto; /* Let the button take its natural width */
+    margin: 10px;
+  }
+  
+  /* Optional styling for the Address List title */
+  .address_list_title {
+    margin: 0;
+    font-size: 24px;
+  }
+  
