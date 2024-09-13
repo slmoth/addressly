@@ -8,6 +8,10 @@ export class UrlService {
   constructor() { }
 
   baseUrl = "localhost:4200";
-  dashboardUrl = this.baseUrl + "/dashboard";
 
+  //** Router Links **//
+  dashboardUrl = "/dashboard";
+
+  //** Full URLs **//
+  fullDashboardUrl = `${this.baseUrl}+${this.dashboardUrl}`;
 }
