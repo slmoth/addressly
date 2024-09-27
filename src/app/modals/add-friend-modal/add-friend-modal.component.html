@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Add New Friend</h1>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label appearance="fill">First Name</mat-label>
+    <input matInput placeholder="Enter first name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="Enter last name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Address</mat-label>
+    <input matInput placeholder="Enter address">
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+</div>
